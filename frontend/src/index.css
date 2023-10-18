@@ -1,0 +1,38 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #f9ad6a;
+  --error: #e7195a;
+}
+body {
+  background: linear-gradient(90deg, rgba(251,123,142,1) 0%, rgba(111,95,144,1) 99%);
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: linear-gradient(90deg, rgba(251,123,142,1) 0%, rgba(111,95,144,1) 99%);
+  
+}
+header .container {
+  /* max-width: 1400px; */
+  display: flex;
+  box-shadow: 20px 20px 50px #8a5082, 
+  -15px -15px 60px #8a5082;
+  /* -moz-box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.29);
+  -webkit-box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.29); */
+  position: relative;
+  padding: 5px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
