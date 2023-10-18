@@ -3,11 +3,12 @@
 
 /* layout */
 :root {
-  --primary: #f9ad6a;
+  --primary: #464646;
   --error: #e7195a;
 }
 body {
-  background: linear-gradient(90deg, rgba(251,123,142,1) 0%, rgba(111,95,144,1) 99%);
+  background: linear-gradient(90deg, rgba(251,123,142,1) 0%, rgba(111,95,144,1) 99%);;
+  /*  */
   margin: 0;
   font-family: "Poppins";
 }
@@ -18,8 +19,8 @@ header {
 header .container {
   /* max-width: 1400px; */
   display: flex;
-  box-shadow: 20px 20px 50px #8a5082, 
-  -15px -15px 60px #8a5082;
+  box-shadow: 5px 20px 50px hsl(309, 20%, 31%),  /* 8a5082*/
+  -30px -30px 60px hsl(309, 20%, 31%);
   /* -moz-box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.29);
   -webkit-box-shadow: 0px 10px 15px rgba(100, 100, 100, 0.29); */
   position: relative;
@@ -35,4 +36,70 @@ header a {
   max-width: 1400px;
   padding: 20px;
   margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #e5c1cd; /*f3abb6 fdb4c8 */
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
 }
