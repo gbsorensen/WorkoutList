@@ -51,9 +51,18 @@ header a {
   padding: 20px;
   position: relative;
   /* box-shadow: 2px 2px 5px rgba(0,0,0,0.05); */
-  box-shadow: 
-    6px 6px 12px 0 rgba(0, 0, 0, 0.25),
-    -4px -4px 12px 0 rgba(255, 255, 255, 0.3);
+  /* box-shadow: 
+    4px 4px 8px 0 rgba(0, 0, 0, 0.25),
+    -3px -3px 12px 0 rgba(255, 255, 255, 0.3); */
+    box-shadow:
+    -10px -10px 30px rgb(245, 160, 173),
+    10px 10px 30px #aeaec040,
+    inset -10px -10px 10px #aeaec025,
+    inset 10px 10px 10px #f7d5e0;
+
+    /* rgba(222,141,153,1) */
+
+    
 }
 .workout-details h4 {
   margin: 0 0 10px 0;
